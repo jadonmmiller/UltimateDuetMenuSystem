@@ -21,6 +21,7 @@ image R11 C0 L"imgs/hline.img"
 
 
 ; --------------- Temperature ---------------
+; Note: you may need to change this section depending on your default heater number.
 image R16 C28 L"imgs/temp.img"
 alter C40 N100 W20 H2
 text T" / "

@@ -10,6 +10,22 @@
 ; The goal of this menu is to make it easy to preheat the printer. It
 ; has a group of buttons to set the temperature and the current temperatures
 ; at the bottom with a shortcut to print/resume.
+;
+; Note: To modify the preset temperatures, there are two places to change for
+; each temperature. The "T" parameter determines what is shown on the button
+; and the number after the "S" is the temperature sent to the firmware. For example,
+; if I wanted to change the second bed heater button to 45C, I would change this line:
+; 
+; button C46 W19 T"40" A"M140 S40"
+;
+; To this line:
+;
+; button C46 W19 T"45" A"M140 S45"
+;
+; The hotend buttons work the same way.
+;
+; Note: you may need to change the gcode commands for each button if you don't use the
+; default heater configuration.
 
 
 

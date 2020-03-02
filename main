@@ -38,6 +38,7 @@ button W42 V6 T"Abort" A"menu confirmAbort"
 
 
 ; --------------- Main Overview ---------------
+; Note: this section may need modified if you use different heater and fan numbers.
 image R11 C0 L"imgs/hline.img"
 
 ; Bed Temp
