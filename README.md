@@ -1,9 +1,9 @@
 # Ultimate Duet Menu System
 ## An attempt to make the best set of menu files for a 12864 display.
- There are a few menu sets available for a Duet with a connected 12864 "dumb" display, but many of them
- suffer from depreciated commands, bad coding practices, and simply a lack of functionality!
+ There are a few menu sets available for a Duet with a connected 12864 display, but many of them
+ suffer from depreciated commands, bad coding practices, or simply a lack of functionality!
 
- Therefore, I attempted to make an "ultimate" menu system that be used to completely control the printer
+ Therefore, I attempted to make an "ultimate" menu system that can be used to completely control the printer
  in an event of a network outage or some similar problem. As a print farm owner, my printers can't quit
  when the wifi has a glitch!
  
@@ -23,9 +23,37 @@
  
  [Tinkerlifeproject's TinkerLCD](https://github.com/tinkerlifeprojects/DUET3D_12864LCD_MenuFiles)
  
- [mudcruzr's LCD files](https://github.com/mudcruzr/Duet-Maestro-12864-Menu-Files)
+ [Mudcruzr's LCD files](https://github.com/mudcruzr/Duet-Maestro-12864-Menu-Files)
  
- [Sidic101's improvements on mudcruzr's menu](https://github.com/Sidic101/Duet-Maestro-12864-Menu-Files)
+ [Sidic101's improvements on Mudcruzr's menu](https://github.com/Sidic101/Duet-Maestro-12864-Menu-Files)
+ </br>
+ </br>
+ 
+## Key Features
+ - Print files from the external SD card (Not supported in any other known menu system)
+ - Control Speed, Extrusion, Babystepping, Fans, and Heaters all from the homepage
+ - Supports running custom macros from the /macros folder on the main SD card
+ - Easy manual and automatic bed leveling
+ - Deploy and Retract a Z Probe using the native commands.
+ - Allows control of the power supply using `M80` and `M81` commands
+ - Easily Customizable
+ </br>
+ </br> 
+ 
+ ## Menu Structure
+ Like the TinkerLCD files, the main screen shows the temps, fan speeds, and axis positions. From here,
+ you can scroll right to access the speed and extrusion multiplier, as well as baby-stepping. The buttons
+ along the top let you start prints, move the head, and go to the menu, which includes options for preheating,
+ bed leveling, extruder control, power control, (for use with a connected ATX or similar power supply) Z probe
+ control, and running macros. While printing, you can view information on the print progress and pause the print.
+ When paused, there are options to abort the print, resume it, or go to a slightly modified version of the menu.
+ </br>
+ </br>
+ 
+## Using these files
+ A genuine Reprap Discount display is almost plug-and-play with the Duet Maestro. To use it with these files,
+ add a `M918 P1 E-4 F2000000` (for most configurations) to your config file. Then send these files to a zipped
+ folder and upload them via the button on the web interface's display tab.
  </br>
  </br>
  
@@ -58,14 +86,6 @@
  </br>
  </br>
  
- ## Using these files
- If you get a genuine Reprap Discount 12864 LCD, it's almost plug-and-play with the Duet Maestro. To use
- it with these files, add a `M918 P1 E-4 F2000000` (for most configurations) to your config file. Then
- put these menu files into a zipped folder and upload them via the button on the web interface's display
- tab.
- </br>
- </br>
- 
  ## Contributing
- I tried to make these files the ultimate, but they're by no means perfect! Please feel free to suggest
- any other changes or features that you think would be helpful. Thanks!
+ I tried to make these files the best out there, but they're by no means perfect! Please feel free to suggest
+ any changes or features that you think would be helpful. Thanks!
