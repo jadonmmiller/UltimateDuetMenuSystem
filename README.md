@@ -41,7 +41,7 @@
  </br> 
  
  ## Menu Structure
- Like the TinkerLCD files, the main screen shows the temps, fan speeds, and axis positions. From here,
+ Like the TinkerLCD files, the main screen shows the temps, fan speeds, and axis positions. From there,
  you can scroll right to access the speed and extrusion multiplier, as well as baby-stepping. The buttons
  along the top let you start prints, move the head, and go to the menu, which includes options for preheating,
  bed leveling, extruder control, power control, (for use with a connected ATX or similar power supply) Z probe
@@ -86,6 +86,18 @@
  </br>
  </br>
  
- ## Contributing
+## Features waiting on firmware compatability
+ These are features I'd like to add to the display system but aren't yet available in the firmware. This
+ is mainly a reminder-list for me.
+ 
+ - Only show SD cards when they're mounted (Supported for the internal card, but not the external yet.)
+ 
+ - Show print estimations based on the slicer
+ 
+ - Show the elapsed print time
+ </br>
+ </br>
+ 
+## Contributing
  I tried to make these files the best out there, but they're by no means perfect! Please feel free to suggest
  any changes or features that you think would be helpful. Thanks!
