@@ -23,4 +23,4 @@ image R11 C0 L"imgs/hline.img"
 
 
 ; --------------- Show Files ---------------
-files R15 N4 I"1:gcodes" A"M32 #0|return|return"
+files R15 N4 I"1:" A"M32 #0|return|return"
