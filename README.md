@@ -48,6 +48,7 @@ a programmer and not a Youtuber! :smile:
  
  ## Key Features
  - Print files from the external SD card (Not supported in any other known menu system)
+ **Note:** There was a bug in firmware versions prior to 3.01-RC2, so you must use that version or newer to use the external SD card.
  - Control Speed, Extrusion, Babystepping, Fans, and Heaters all from the homepage
  - Supports running custom macros from the /macros folder on the main SD card
  - Easy manual and automatic bed leveling
