@@ -1,14 +1,10 @@
 # Ultimate Duet Menu System
 
-![Power Menu](https://user-images.githubusercontent.com/61329420/76150820-59fa2b80-607c-11ea-85c9-98aa78d60991.jpg)
-
 ![Menu While Printing](https://user-images.githubusercontent.com/61329420/76150822-5ff00c80-607c-11ea-942c-f297da326593.jpg)
 
-![Alternate Menu](https://user-images.githubusercontent.com/61329420/76150825-62526680-607c-11ea-853b-b524c5ce6484.jpg)
+[Here's a video giving a tour of the menu.](https://youtu.be/9U0oqMW-FwY) I'm warning you - after watching this it will be obvious why I'm
+a programmer and not a Youtuber! :smile:
 
-![Printing Status Screen](https://user-images.githubusercontent.com/61329420/76150827-65e5ed80-607c-11ea-86a0-0e0885c7b64b.jpg)
-
-**TODO:** Add Video
 
 ## An attempt to make the best set of menu files for a 12864 display.
  There are a few menu sets available for a Duet with a connected 12864 display, but many of them
