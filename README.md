@@ -1,35 +1,56 @@
 # Ultimate Duet Menu System
+
+![Power Menu](https://user-images.githubusercontent.com/61329420/76150820-59fa2b80-607c-11ea-85c9-98aa78d60991.jpg)
+
+![Menu While Printing](https://user-images.githubusercontent.com/61329420/76150822-5ff00c80-607c-11ea-942c-f297da326593.jpg)
+
+![Alternate Menu](https://user-images.githubusercontent.com/61329420/76150825-62526680-607c-11ea-853b-b524c5ce6484.jpg)
+
+![Printing Status Screen](https://user-images.githubusercontent.com/61329420/76150827-65e5ed80-607c-11ea-86a0-0e0885c7b64b.jpg)
+
+**TODO:** Add Video
+
 ## An attempt to make the best set of menu files for a 12864 display.
  There are a few menu sets available for a Duet with a connected 12864 display, but many of them
  suffer from depreciated commands, bad coding practices, or simply a lack of functionality!
 
  Therefore, I attempted to make an "ultimate" menu system that can be used to completely control the printer
- in an event of a network outage or some similar problem. As a print farm owner, my printers can't quit
+ in an event of a network outage or similar problem. As a print farm owner, my printers can't quit
  when the wifi has a glitch!
  
  I'm quite satisfied with the result, and while not perfect, I think it makes good use of the available
  menu functionality. I decided to share it with the 3D printing community in hopes that someone else can benefit
  from it as well.
+ 
+ These files are written for a single extruder, cartesian 3D printer with a heated bed. This means there's
+ one heater and extruder for the nozzle and one heater for the bed. It's also designed for a cooling fan blowing on the
+ printed part, which is standard on most printers.
  </br>
  </br>
  
-## Inspiration
- I owe a big thank you to Github user @tinkerlifeprojects. I really liked his menu system and used the
- basic framework to write mine. I also want to thank @mudcruzr, as I used some ideas from his menus as
- well.
+## What are these files and how do I use them?
+ One of the Duet Maestro's greatest advantages is something called the DWC, or Duet Web Control.
+ This network interface offers full control of the printer from a remote location, making it incredibly
+ handy when you have your printers in another room like I do. However, all networks have glitches every
+ once in a while, and it's really helpful to have a screen mounted on the printer for quick adjustments.
  
- I had trouble finding menu systems contributed by other users, so here's a list of some of the other
- currently available files:
+ The solution to this is to buy a "Reprap Discount 12864 Display." They're quite cheap at about $15 USD,
+ and very easy to set up if you buy the genuine version.
  
- [Tinkerlifeproject's TinkerLCD](https://github.com/tinkerlifeprojects/DUET3D_12864LCD_MenuFiles)
+ The two cables from the display plug into the Maestro, simply match up the names beside the plugs. (Note that 
+ the Maestro is currently the only Duet board capable of running these displays. Check into a "PanelDue" if 
+ you need a display on a different board.)
  
- [Mudcruzr's LCD files](https://github.com/mudcruzr/Duet-Maestro-12864-Menu-Files)
- 
- [Sidic101's improvements on Mudcruzr's menu](https://github.com/Sidic101/Duet-Maestro-12864-Menu-Files)
+ To configure the board with this new display, just add `M918 P1 E-4 F2000000` to your configuration file. 
+ Your printer now knows it has a connected display, so the next step is to tell it what to display! That's 
+ where these files come in - they tell the printer what to put where. Compress them into a ZIP folder, or 
+ download it from the [Github Releases Page](https://github.com/jadonmmiller/UltimateDuetMenuSystem/releases) 
+ page, and upload it to your printer via the blue "Upload" button on the display tab of the web interface. 
+ That should be all that's needed for a basic setup--enjoy your new display!
  </br>
  </br>
  
-## Key Features
+ ## Key Features
  - Print files from the external SD card (Not supported in any other known menu system)
  - Control Speed, Extrusion, Babystepping, Fans, and Heaters all from the homepage
  - Supports running custom macros from the /macros folder on the main SD card
@@ -40,20 +61,10 @@
  </br>
  </br> 
  
- ## Menu Structure
- Like the TinkerLCD files, the main screen shows the temps, fan speeds, and axis positions. From there,
- you can scroll right to access the speed and extrusion multiplier, as well as baby-stepping. The buttons
- along the top let you start prints, move the head, and go to the menu, which includes options for preheating,
- bed leveling, extruder control, power control, (for use with a connected ATX or similar power supply) Z probe
- control, and running macros. While printing, you can view information on the print progress and pause the print.
- When paused, there are options to abort the print, resume it, or go to a slightly modified version of the menu.
- </br>
- </br>
- 
-## Using these files
- A genuine Reprap Discount display is almost plug-and-play with the Duet Maestro. To use it with these files,
- add a `M918 P1 E-4 F2000000` (for most configurations) to your config file. Then send these files to a zipped
- folder and upload them via the button on the web interface's display tab.
+## Menu Structure
+ The main overview screen shows the most-used settings, with an option to scroll right for more print settings. 
+ (speed, extrusion, and baby-stepping) The menu offers options to move axis, disable motors, control the printer,
+ run macros, and many other features!
  </br>
  </br>
  
@@ -87,14 +98,31 @@
  </br>
  
 ## Features waiting on firmware compatability
- These are features I'd like to add to the display system but aren't yet available in the firmware. This
- is mainly a reminder-list for me.
+ These are features I'd like to add to the display system but aren't yet available in the firmware. The 
+ creator of the Duet (David Crocker) told me that in release 3.02 of the firmware he plans on adding support
+ for displaying anything in the object model, so these should be possible in the near future!
  
  - Only show SD cards when they're mounted (Supported for the internal card, but not the external yet.)
  
  - Show print estimations based on the slicer
  
  - Show the elapsed print time
+ </br>
+ </br>
+ 
+## Inspiration
+ I owe a big thank you to Github user @tinkerlifeprojects. I really liked his menu system and used the
+ basic framework to write mine. I also want to thank @mudcruzr, as I used some ideas from his menus as
+ well.
+ 
+ I had trouble finding menu systems contributed by other users, so here's a list of some of the other
+ currently available files:
+ 
+ [Tinkerlifeproject's TinkerLCD](https://github.com/tinkerlifeprojects/DUET3D_12864LCD_MenuFiles)
+ 
+ [Mudcruzr's LCD files](https://github.com/mudcruzr/Duet-Maestro-12864-Menu-Files)
+ 
+ [Sidic101's improvements on Mudcruzr's menu](https://github.com/Sidic101/Duet-Maestro-12864-Menu-Files)
  </br>
  </br>
  
