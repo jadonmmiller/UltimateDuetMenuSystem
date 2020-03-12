@@ -38,7 +38,7 @@ button C105 T"+25" A"G91 G1 X+25 F6000"
 
 
 ; --------------- Y Axis ---------------
-image R14 C10 L"imgs/home.img"
+image R27 C10 L"imgs/home.img"
 button C18 T" Y " A"G28 Y"
 button C32 T"-25" A"G91 G1 Y-25 F6000"
 button C52 T"-5" A"G91 G1 Y-5 F6000"
