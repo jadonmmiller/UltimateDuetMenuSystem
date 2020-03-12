@@ -10,8 +10,9 @@
 ; This is the file for the overview screen of the menu system.
 ; On the top of the screen we have a menu that updates based
 ; on the print status. In the middle we show the temperatures and fan
-; speeds, and the bottom shows axis positions. There is a scroll
-; button on the right to go to the "altMain" menu.
+; speeds, and the bottom shows the percentage complete and time left according
+; to filament usage, or the axis positions if you're not in a print. There 
+; is a scroll button on the right to go to the "altMain" menu.
 
 
 
@@ -67,9 +68,17 @@ button R25 C104 F1 T" » " A"menu altMain"
 
 ; --------------- Axis Positions ---------------
 image R53 C0 L"imgs/hline.img"
-text R54 C17 F0 T"X "
-value N510 W25
-text T" Y "
-value N511 W25
-text T" Z "
-value N512 D2 W30
+
+;"Not Actively Printing" Commands
+text V5 R54 C15 F0 T"X "
+value V5 N510 W25
+text V5 T" Y "
+value V5 N511 W25
+text V5 T" Z "
+value V5 N512 D2 W30
+
+;"Actively Printing"
+value V4 R54 C4 W34 H0 N535 D0
+text V4 C46 T"Z "
+value V4 N512 D2
+value V4 C85 W40 H2 N536
