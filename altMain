@@ -12,8 +12,7 @@
 ; as well as babystepping. The general layout is the same as the main screen.
 ;
 ;
-; Note: The top menu and axis positions sections should always be exactly the same
-; as the the "main" file.
+; Note: The top menu and bottom sections should always be exactly the same as the "main" file.
 
 
 
@@ -62,9 +61,17 @@ button R25 C6 F1 T" « " A"return"
 
 ; --------------- Axis Positions ---------------
 image R53 C0 L"imgs/hline.img"
-text R54 C17 F0 T"X "
-value N510 W25
-text T" Y "
-value N511 W25
-text T" Z "
-value N512 D2 W30
+
+;"Not Actively Printing" Commands
+text V5 R54 C15 F0 T"X "
+value V5 N510 W25
+text V5 T" Y "
+value V5 N511 W25
+text V5 T" Z "
+value V5 N512 D2 W30
+
+;"Actively Printing"
+value V4 R54 C4 W34 H0 N535 D0
+text V4 C46 T"Z "
+value V4 N512 D2
+value V4 C85 W40 H2 N536

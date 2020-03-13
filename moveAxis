@@ -27,29 +27,33 @@ image R11 C0 L"imgs/hline.img"
 
 
 ; --------------- X Axis ---------------
-image R14 C15 L"imgs/home.img"
-button C25 T" X " A"G28 X"
-button C47 T"-25" A"G91 G1 X-25 F6000"
-alter C66 N510 D0 W18 H2
-text T"mm"
-button C105 T"+25" A"G91 G1 X+25 F6000"
+image R14 C6 L"imgs/home.img"
+button C16 T" X " A"G28 X"
+button C30 T"-25" A"G91 G1 X-25 F6000"
+button C50 T"-5" A"G91 G1 X-5 F6000"
+alter C64 N510 D0 W22 H1
+button C88 T"+5" A"G91 G1 X+5 F6000"
+button C103 T"+25" A"G91 G1 X+25 F6000"
 
 
 ; --------------- Y Axis ---------------
-image R27 C15 L"imgs/home.img"
-button C25 T" Y " A"G28 Y"
-button C47 T"-25" A"G91 G1 Y-25 F6000"
-alter C66 N511 D0 W18 H2
-text T"mm"
-button C105 T"+25" A"G91 G1 Y+25 F6000"
+image R27 C6 L"imgs/home.img"
+button C16 T" Y " A"G28 Y"
+button C30 T"-25" A"G91 G1 Y-25 F6000"
+button C50 T"-5" A"G91 G1 Y-5 F6000"
+alter C64 N511 D0 W22 H1
+button C88 T"+5" A"G91 G1 Y+5 F6000"
+button C103 T"+25" A"G91 G1 Y+25 F6000"
 
 
 ; --------------- Z Axis ---------------
-image R40 C15 L"imgs/home.img"
-button C25 T" Z " A"G28 Z"
-button C47 T"-25" A"G91 G1 Z-25 F6000"
-alter C66 N512 D2 W34 H2
-button C105 T"+25" A"G91 G1 Z+25 F6000"
+image R40 C6 L"imgs/home.img"
+button C16 T" Z " A"G28 Z"
+button C30 T"-25" A"G91 G1 Z-25 F6000"
+button C52 T"-1" A"G91 G1 Z-1 F6000"
+alter C64 N512 D0 W22 H1
+button C90 T"+1" A"G91 G1 Z+1 F6000"
+button C103 T"+25" A"G91 G1 Z+25 F6000"
 
 
 ; --------------- Axis Positions ---------------
