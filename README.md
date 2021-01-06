@@ -96,8 +96,8 @@ a programmer and not a Youtuber! :smile:
  
 ## Features waiting on firmware compatability
  These are features I'd like to add to the display system but aren't yet available in the firmware. The 
- creator of the Duet (David Crocker) told me that in release 3.02 of the firmware he plans on adding support
- for displaying anything in the object model, so these should be possible in the near future!
+ creator of the Duet (David Crocker) told me that he plans on adding support for displaying anything in
+ the object model soon, so these should be possible in the near future!
  
  - Only show SD cards when they're mounted (Supported for the internal card, but not the external yet.)
  
