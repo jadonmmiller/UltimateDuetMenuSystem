@@ -70,7 +70,7 @@ text T"/"
 value N80
 
 ; Hotend Temperature
-image L"imgs/temp.img"
-value H2 N100
+image R53 L"imgs/temp.img"
+value R54 N100
 text T"/"
-value N0
+value H2 N0
