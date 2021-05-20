@@ -61,16 +61,16 @@ button R40 C0 W128 V6 T"Resume" A"M24|menu main"
 
 
 ; --------------- Temperatures ---------------
-image R53 C0 L"imgs/hline.img"
+image R52 C0 L"imgs/hline.img"
 
 ; Bed Temperature
-image R54 C5 L"imgs/bed.img"
+image R53 C5 L"imgs/bed.img"
 value H2 N180
 text T"/"
 value N80
 
 ; Hotend Temperature
 image R53 L"imgs/temp.img"
-value R54 N100
+value H2 N100
 text T"/"
-value H2 N0
+value N0
