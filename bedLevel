@@ -18,7 +18,7 @@
 
 
 ; --------------- Header ---------------
-button R0 C0 W63 F0 H1 T"Auto Level" A"M98 P0:/menu/scripts/autoLevel.g"
+button R0 C0 W63 F0 H1 T"Auto Level" A"M98 P""0:/menu/scripts/autoLevel.g"""
 image L"imgs/vline.img"
 button W64 F0 T"Back" A"return"
 image R11 C0 L"imgs/hline.img"
@@ -46,6 +46,6 @@ button C80 T"Off" A"M18"
 
 ; --------------- Move Buttons ---------------
 text C42 W40 H1 R39 T"Move to:"
-button R51 C5 W36 H2 T"Point 1" A"M98 P0:/menu/scripts/goToLevelPoint1.g"
-button C46 W36 H2 T"Point 2" A"M98 P0:/menu/scripts/goToLevelPoint2.g"
-button C90 W36 H2 T"Point 3" A"M98 P0:/menu/scripts/goToLevelPoint3.g"
+button R51 C5 W36 H2 T"Point 1" A"M98 P""0:/menu/scripts/goToLevelPoint1.g"""
+button C46 W36 H2 T"Point 2" A"M98 P""0:/menu/scripts/goToLevelPoint2.g"""
+button C90 W36 H2 T"Point 3" A"M98 P""0:/menu/scripts/goToLevelPoint3.g"""

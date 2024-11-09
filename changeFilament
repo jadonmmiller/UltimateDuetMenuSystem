@@ -30,10 +30,10 @@ text T"°C"
 
 
 ; --------------- Buttons ---------------
-button R32 C0 W45 H1 T"Unload" A"M98 P0:/menu/scripts/unload.g"
+button R32 C0 W45 H1 T"Unload" A"M98 P""0:/menu/scripts/unload.g"""
 button C48 T"-5 " A"T0 G91 G1 E-5 F400"
 button C65 T"+5 " A"T0 G91 G1 E+5 F400"
-button C83 W45 T"Load" A"M98 P0:/menu/scripts/load.g"
+button C83 W45 T"Load" A"M98 P""0:/menu/scripts/load.g"""
 
 
 ; --------------- Print Button---------------
